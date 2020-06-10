@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.front-page {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("images/IMG-6985.JPG");
+    background-size: cover;
+    background-position: top;
+    color: white;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.ham-menu {
+    display: none;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 7px 0px;
+}
+
+.header-menu {
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    align-items: center;
+}
+
+.list li {
+    display: inline;
+    margin: 0px 10px;
+    font-size: 19px;
+}
+
+.list li:hover a {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    text-decoration: none;
+}
+
+.list a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+@media (max-width: 1048px) {
+    .ham-menu {
+        display: block;
+        padding: 5px;
+    }
+    .ham-menu:hover {
+        cursor: pointer;
+    }
+    .header-list {
+        display: none;
+    }
+    .list {
+        position: absolute;
+        right: 0px;
+        margin-right: 35px;
+        width: 200px;
+        background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+        padding: 10px;
+        height: auto;
+        border-radius: 5px;
+        z-index: 999;
+    }
+    .list li {
+        display: flex;
+        margin: 30px 0px;
+        background-color: none;
+        height: 30px;
+        align-items: center;
+        padding: 5px;
+    }
+    .list li:hover a {
+        color: white;
+        width: 100%;
+    }
+    .about-text {
+        flex-direction: column;
+    }
+}
+
+.main-foot {
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%, -1%);
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 1%;
+    }
+    50% {
+        bottom: 3%;
+    }
+    100% {
+        bottom: 1%;
+    }
+}
+
+.main-foot img {
+    width: 50px;
+}
+
+.middle-section {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+.text h1 {
+    font-size: 30px;
+}
+
+.text {
+    text-align: center;
+}
+
+.color {
+    color: rgb(150, 0, 0);
+}
+
+.about {
+    background-color: brown;
+}
+
+.about-text {
+    display: flex;
+    padding: 100px;
+}
+
+.brand {
+    color: black;
+    text-align: center;
+}
+
+.creator {
+    color: black;
+    text-align: center;
+}
